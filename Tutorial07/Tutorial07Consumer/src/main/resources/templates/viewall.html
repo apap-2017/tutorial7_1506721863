@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="/fragments/fragment :: header-all">
+    </head>
+    <body>
+        <h1>All Students</h1>
+        <table id="studentTable" class="display" cellspacing="0" width="100%">
+        	<thead>
+        		<tr>
+        			<th>No.</th>
+        			<th>NPM</th>
+        			<th>Name</th>
+        			<th>GPA</th>
+        			<th>Cum Laude</th>
+        			<th></th>
+        			<th></th>
+        		</tr>
+        	</thead>
+        	<tfoot th:each="student,iterationStatus: ${students}">
+        		<tr>
+        			<td th:text="${iterationStatus.count}"></td>
+        			<td th:text="${student.npm}"></td>
+        			<td th:text="${student.name}"></td>
+        			<td th:text="${student.gpa}"></td>
+        			<td th:text="${student.gpa}>=3.49? 'Ya' : 'Tidak'"></td>
+        			<td><a th:href="'/student/delete/' + ${student.npm}"><button class="btn btn-warning">Delete Student</button></a></td>
+        			<td><a th:href="'/student/update/' + ${student.npm}"><button class="btn btn-success">Update Student</button></a></td>
+        		</tr>
+        	</tfoot>
+        </table>
+    </body>
+</html>
+        			
