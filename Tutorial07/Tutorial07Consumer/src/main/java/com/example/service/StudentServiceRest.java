@@ -31,19 +31,20 @@ public class StudentServiceRest implements StudentService
 	public List<StudentModel> selectAllStudents()
 	{
 		log.info ("REST - Select all students");
-		return studentDAO.selectAllStudents();
+		return null;
 	}
 	
 	@Override
-	public void addStudent (StudentModel student) {
-		log.info("REST - add student");
-	}
+	public void addStudent (StudentModel student) {}
 	
 	@Override
 	public void deleteStudent (String npm) {}
 	
 	@Override
 	public void updateStudent (StudentModel student) {}
+	
+	@Override
+	public void addCourse (String a, String b) {}
 	
 	@Override
 	public CourseModel selectCourse(String id_course) {

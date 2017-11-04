@@ -62,4 +62,11 @@ public class StudentServiceDatabase implements StudentService
     	return studentMapper.selectCourse(id_course);
     }
 
+
+	@Override
+	public void addCourse(String a, String b) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

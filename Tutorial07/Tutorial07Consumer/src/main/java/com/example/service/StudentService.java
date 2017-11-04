@@ -19,5 +19,5 @@ public interface StudentService
 
 	CourseModel selectCourse(String id_course);
 
-	void addCourse(String npm, String idCourse);
+	void addCourse(String a, String b);
 }

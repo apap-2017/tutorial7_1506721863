@@ -1,0 +1,9 @@
+pada tutorial ini saya mostly belajar cara import. belum sampe ke penggunaan yang sebenarnya.
+
+1. untuk method viewall pada student kurang lebih sama seperti yang di controller, tapi saya tidak menginisiasi model
+
+2. untuk method select course by ID juga kurang lebih sama seperti pada controller
+
+3.
+
+4.
